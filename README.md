@@ -19,3 +19,5 @@ O modelo foi refinado para incluir os seguintes pontos:
 - Para a entidade Cliente foram criadas duas novas entidades PJ_Pessoa Juridica e PF_Pessoa Fisica, que contêm respectivamente os dados de CNPJ e CPF.
 - A entidade Pagamento foi vinculada a duas outras entidades para detalhar as formas de pagamento: Cartão e Boleto.
 - A entidade Pedido foi alterada para armazenar as informações de envio de cada pedido detalhar como data do pedido, data de envio e data de entrega.
+
+![Diagrama ER](https://github.com/user-attachments/assets/1df62589-5d6b-4fda-9859-eec2b58a4207)
