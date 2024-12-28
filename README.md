@@ -1,2 +1,21 @@
-# Ecommerce-Database
-Modelo conceitual de banco de dados para e-commerce
+# Esquema Conceitual - Banco de Dados para E-commerce
+
+## Descrição do Projeto
+
+Este projeto foi desenvolvido como parte de um desafio no bootcamp de **Análise de Dados com Power BI** da DIO. O objetivo é criar a modelagem conceitual de um banco de dados para um cenário de e-commerce, representando as principais entidades e seus relacionamentos em um ambiente de comércio eletrônico. 
+
+O esquema aborda funcionalidades essenciais, como cadastro de clientes, formas de pagamento, gestão de pedidos e acompanhamento de entregas, garantindo flexibilidade e integridade dos dados.
+
+## Objetivos e Requisitos
+
+O modelo foi refinado para incluir os seguintes pontos:
+
+- **Clientes PJ e PF**: Uma conta pode ser do tipo Pessoa Jurídica (PJ) ou Pessoa Física (PF), mas não pode conter ambas as informações.
+- **Pagamento**: O cliente pode cadastrar múltiplas formas de pagamento.
+- **Entrega**: Cada pedido possui status de entrega (Ex.: "Em transporte", "Entregue", etc.) e código de rastreamento único.
+
+## Respostas ao Desafio
+
+- Para a entidade Cliente foram criadas duas novas entidades PJ_Pessoa Juridica e PF_Pessoa Fisica, que contêm respectivamente os dados de CNPJ e CPF.
+- A entidade Pagamento foi vinculada a duas outras entidades para detalhar as formas de pagamento: Cartão e Boleto.
+- A entidade Pedido foi alterada para armazenar as informações de envio de cada pedido detalhar como data do pedido, data de envio e data de entrega.
