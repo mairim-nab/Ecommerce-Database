@@ -16,8 +16,22 @@ O modelo foi refinado para incluir os seguintes pontos:
 
 ## Respostas ao Desafio
 
-- Para a entidade Cliente foram criadas duas novas entidades PJ_Pessoa Juridica e PF_Pessoa Fisica, que contêm respectivamente os dados de CNPJ e CPF.
-- A entidade Pagamento foi vinculada a duas outras entidades para detalhar as formas de pagamento: Cartão e Boleto.
-- A entidade Pedido foi alterada para armazenar as informações de envio de cada pedido detalhar como data do pedido, data de envio e data de entrega.
+- Para a entidade Cliente foram criadas duas novas entidades: **PJ_Pessoa Jurídica** e **PF_Pessoa Física**, que contêm respectivamente os dados de CNPJ e CPF.
+- A entidade Pagamento foi vinculada a duas outras entidades para detalhar as formas de pagamento: **Cartão** e **Boleto**.
+- A entidade Pedido foi alterada para armazenar as informações de envio de cada pedido, detalhando como data do pedido, data de envio e data de entrega.
+
+## Implementação do Modelo
+
+O script SQL responsável pela criação do esquema lógico deste banco de dados está disponível no arquivo [Ecommerce_model.sql](Ecommerce_model.sql). Ele contém:
+- Criação de tabelas com suas respectivas chaves primárias e estrangeiras;
+- Estrutura dos relacionamentos entre entidades como Cliente, Pedido, Produto, Estoque, Pagamento, e outras;
+- Refinamentos específicos mencionados nos objetivos do projeto.
+
+### Instruções para Uso
+1. Faça o download ou clone o repositório.
+2. Execute o arquivo `Ecommerce_model.sql` em um SGBD (Sistema de Gerenciamento de Banco de Dados) compatível, como MySQL.
+3. Personalize e use o banco de dados de acordo com as necessidades do seu e-commerce.
+
+## Visualização do Modelo
 
 ![Diagrama ER](https://github.com/user-attachments/assets/1df62589-5d6b-4fda-9859-eec2b58a4207)
